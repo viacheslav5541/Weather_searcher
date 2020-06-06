@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="index.css" rel="stylesheet">
+    <script defer src="index.js"></script>
+</head>
+<body>
+        <div id="current-weather-details">
+                <ul>
+                    <li id="current-humidity">-</li>
+                    <li id="current-pressure">-</li>
+                    <li id="current-temperature">-</li>
+                    <li id="current-wind-speed">-</li>
+                </ul>
+                <button id="getWeather" onclick="getWeather()">Get Current Weather</button>
+                <p id ="or-weather">or weather in</p>
+                <input id = "inputname"type="text" placeholder="Write city"></input>
+                <button id="getWeatherByName" onclick="receiveDatabyName()">Get this weather</button>
+                <button id="voice" onclick="sayPlease()">Say</button>
+            </div>
+            <p id="weather-summary"></p>
+
+</body>
+</html>
